@@ -17,9 +17,11 @@
 
   <div id="todo" class="list">
     <h1>To Do </h1>
+    <div id="searchDiv">
     <label><i class="fa fa-search" aria-hidden="true"></i></label><input id="search" type="text" ng-model="taskName">
+  </div>
     <ul>
-      <li ng-repeat="things in todo | filter: taskName | orderBy: 'task'">{{things.task}} <a  ng-click="removeTask($index)"><i class="fa fa-times" aria-hidden="true"></i></a> <a ng-click="completeTask($index)"><i class="fa fa-check" aria-hidden="true"></i></a></li>
+      <li ng-repeat="things in todo | filter: taskName">{{things.task}} <a  ng-click="removeTask($index)"><i class="fa fa-times" aria-hidden="true"></i></a> <a ng-click="completeTask($index)"><i class="fa fa-check" aria-hidden="true"></i></a></li>
     </ul>
   </div>
 

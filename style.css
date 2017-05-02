@@ -37,7 +37,18 @@ input[type= text] {
   font-family: 'Baloo', cursive;
 }
 
-/*#search {
-  width: 25%;
+#search {
+  width: 50%;
   text-align: center;
-}*/
+  display: inline;
+
+}
+
+#searchDiv {
+  margin-left: auto;
+  margin-right: auto;
+}
+i {
+  text-align: center;
+  margin-right: 2px;
+}
