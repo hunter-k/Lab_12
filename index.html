@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Angular Practice</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://use.fontawesome.com/c65a787200.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+
+</head>
+<body ng-app="ourModule" ng-controller="ourController">
+
+  <div id="enter" class="list">
+    <input type="text" ng-model="newTask" placeholder="Add a Task"></input>
+    <button type="button" ng-click="addTask(newTask)">Add</button>
+  </div>
+
+  <div id="todo" class="list">
+    <h1>To Do </h1>
+    <label><i class="fa fa-search" aria-hidden="true"></i></label><input id="search" type="text" ng-model="taskName">
+    <ul>
+      <li ng-repeat="things in todo | filter: taskName | orderBy: 'task'">{{things.task}} <a  ng-click="removeTask($index)"><i class="fa fa-times" aria-hidden="true"></i></a> <a ng-click="completeTask($index)"><i class="fa fa-check" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+
+  <div id="completed" class="list">
+    <h1>Complete</h1>
+    <ul>
+      <li ng-repeat="things in completedTasks track by $index">{{things.task}}
+        <a ng-click="delete($index)"><i class="fa fa-trash" aria-hidden="true"></i></a></li>
+      </div>
+
+
+
+      <script src="angular.min.js"></script>
+      <script src="script.js"></script>
+    </body>
+    </html>

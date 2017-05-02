@@ -1,0 +1,43 @@
+body {
+  background-image: url("http://static8.depositphotos.com/1055238/955/i/950/depositphotos_9554413-stock-photo-blue-soft-cozy-carpet-texture.jpg");
+  font-family: 'Baloo', cursive;
+}
+
+
+.list {
+
+  background-color: rgba(190, 183, 177, 0.9);
+  width: 30%;
+  display: inline-grid;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 10px 5px 5px black;
+  margin-right: 1%;
+
+}
+
+#todo, #completed {
+  height: 50%;
+}
+
+#enter {
+  width: 15%;
+  background-color: rgba(190, 183, 177, 0.9);
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  font-family: 'Baloo', cursive;
+
+}
+input[type= text] {
+  font-family: 'Baloo', cursive;
+}
+
+/*#search {
+  width: 25%;
+  text-align: center;
+}*/
